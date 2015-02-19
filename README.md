@@ -3,6 +3,25 @@ Course Project for Data Cleaning Course using the
 Human Activity Recognition Using Smartphones Dataset
 
 -------------------------------------------------------------------------------------
+The key variables used are:
+
+- test_data, train_data: dataframes containing the contents read from test and train files resp.
+
+- test_label, train_label: dataframes containing the contents read from test and train label files resp.
+
+- test_subject, train_subject: dataframes containing the contents read from test and train subject files resp.
+
+- complete: dataframe with merged test and train data + labels + subjects
+
+- data: a complete dataframe with merged test and train data + labels + subjects to work on later
+
+- features: dataframe for the features read from file provided
+
+- sub_data: a subset dataframe from data with only features about mean and std along with their activity and subject, columns in this dataframe are named using activity labels (codes), subject, and feature names
+
+-tidy_data: dataframe for sub_data with 2 main changes: 1) activity are named rather than coded, and 2) observatoins' features values are grouped and averaged by activity and subject
+
+-my.data: the FINAL dataframe used to write in the result file
 
 The repo contains both the result file and the run_analysis.R file.
 
